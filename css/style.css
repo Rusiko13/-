@@ -1,0 +1,165 @@
+header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  padding-inline: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1e1f;
+}
+
+.left-wing-header {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: #f4f4f4;
+}
+
+.tbc-logo {
+  width: 50px;
+  height: 50px;
+  background: url(../photos/tbc_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right-wing-header > ul {
+  display: flex;
+  column-gap: 22px;
+}
+
+/* აქ არის პრობლემა ა ცალკე თუ არ დავწერე არ ათეთრებს და ლურჯს ტოვებს */
+a {
+  color: #f4f4f4;
+}
+a:hover {
+  color: #00a3e0;
+  transition: 0.4s ;
+  -webkit-transition: 0.4s ;
+  -moz-transition: 0.4s ;
+  -ms-transition: 0.4s ;
+  -o-transition: 0.4s ;
+}
+
+.main-background-img {
+  margin-top: 90px;
+  width: 100%;
+  height: 452px;
+  background-image: url(../photos/background_image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-section1 {
+  color: #f4f4f4;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #1a1e1f;
+}
+.text-on-background-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 150px;
+  padding-left: 50px;
+}
+.main-section2 {
+  padding-block: 30px;
+  background-color: #2b2b2b;
+  color: #f4f4f4;
+}
+.main-section2 > div {
+  width: 72%;
+  margin: auto;
+  font-size: 28px;
+  line-height: 1.6em;
+}
+.main-section2 p {
+  margin-bottom: 30px;
+}
+
+.main-section2 a {
+  color: #00a3e0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+.main-section2 a:hover {
+  color: #dbdbdb;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.main-section3{
+    background-color: #161616;
+    color: #f4f4f4;
+    padding-bottom: 45px;
+
+}
+.test {
+display: flex;
+justify-content: center;
+padding-top: 60px;
+}
+.main-section3 h5{
+    font-size: 24px;
+    color: #dbdbdb;
+    padding-block: 25px 55px;
+}
+
+    .info-boxs{
+        display: flex;
+        column-gap: 30px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+    .info-box1 {
+        border: 1px solid #dbdbdb;
+        width: 300px;
+        height: 359px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+}
+.info-box1 > div{
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.info-box1-photo1{
+    background: url(../photos/1.webp); 
+}
+.info-box1-photo2{
+background: url(../photos/2.webp);
+}
+
+.info-box1 p, .info-box1 h6, .info-box1 a {
+    padding-left: 30px;
+}
+
+.info-box1 h6{
+    margin-block: 15px;
+}
+.info-box1 p{
+    margin-bottom: 27px;
+}
+.info-box1 a{
+    margin-top: 42px;
+    color: #00AEEF;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
