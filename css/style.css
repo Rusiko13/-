@@ -213,20 +213,17 @@ a:hover {
   align-items: center;
 
   /* padding: 30px 35px 0; */
-
 }
-.main-section4-1 h6{
-    font-size: 25px;
-    margin: 0 0 30px 92px;
-
-
+.main-section4-1 h6 {
+  font-size: 25px;
+  margin: 0 0 30px 92px;
 }
 /* aq itskeba testi */
-.container{
-    width: 90vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-button {
@@ -234,8 +231,6 @@ a:hover {
   margin: 10px;
   cursor: pointer;
 }
-
-
 
 .nav-button {
   padding: 10px 20px;
@@ -243,7 +238,6 @@ a:hover {
   cursor: pointer;
   flex-shrink: 0;
 }
-
 
 .accordion {
   margin: 30px 10px;
@@ -287,8 +281,8 @@ a:hover {
   font-weight: 100;
   cursor: pointer;
 }
-.fa-solid:hover{
-opacity: 25%;
+.fa-solid:hover {
+  opacity: 25%;
 }
 .nav-button {
   background: none;
@@ -307,75 +301,130 @@ opacity: 25%;
   -o-transition: opacity 0.7s ease-in-out;
 }
 
-
 /* footer */
 
 footer {
-    height: 500px;
-    background-color: #1a1e1f;
-    color: #f4f4f4;
+  height: 500px;
+  background-color: #1a1e1f;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50%;
+}
+.footer-tbc-logo {
+    background: url(../photos/tbc-footer-logo.png);
+    margin-top: 20px;
+    background-repeat: no-repeat;
+  }
+  .footer-left-wing,
+  .footer-right-wing {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 15px;
   }
-  .rules:hover{
-opacity: 50%;
-cursor: pointer;
-  }
-  .readRules{
-    display: none;
-
-  }
-  .readRulesAppear{
-    display: block;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background-color: #2b2b2b;
-    color: #8C8C8C;
-    padding: 40px;
-    position: relative;
-
-  }
-  .readRulesAppear::after{
-    content: "X";
-    position: absolute;
-    top: 20px;
-    right:20px;
-    color: #8C8C8C;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Font Awesome 5 Free";
-    cursor: pointer;
-  }
-
-  .readRules h6{
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-  .readRules p {
-    font-size: 13px;
-    margin-bottom: 10px;
-    
-  }
- 
-  .rules-btn{
+  .footer-right-wing button{
     width: 100%;
-    height: 40px;
-    background-color: #DBDBDB;
-    text-align: center;
-    font-size: 15px;
-    color: #1c1c1c;
-    cursor: pointer;
+    height: 45px;
+    background-color: #00a3e0;
+    color: #f4f4f4;
     border: none;
     border-radius: 5px;
+    font-size: 22px;
+  cursor: pointer;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-  .rules-btn:hover{
-    color: #f4f4f4;
-    background-color: #00aeef;
+.footer-right-wing button:hover{
+    background-color: #8c8c8c;
+    color: #2b2b2b;
+
+}
+
+  .footer-left-wing p {
+    margin-left: 9px;
+  }
+  .social-icons{
+    display: flex;
+  }
+ 
+  .facebook{
+    background:  url(../photos/facebook.png);
+  }
+  .youtube{
+    background:  url(../photos/youtube.png);
+    margin-bottom: 9px;
+    padding-bottom: 10px;
 
   }
+  .footer-icon{
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+
+  }
+
+  /* წესების სექცია */
+  
+.rules:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.readRules {
+  display: none;
+}
+.readRulesAppear {
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #2b2b2b;
+  color: #8c8c8c;
+  padding: 40px;
+  position: relative;
+}
+.readRulesAppear::after {
+  content: "X";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #8c8c8c;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  cursor: pointer;
+}
+
+.readRules h6 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.readRules p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.rules-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #dbdbdb;
+  text-align: center;
+  font-size: 15px;
+  color: #1c1c1c;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.rules-btn:hover {
+  color: #f4f4f4;
+  background-color: #00aeef;
+}
+
+
