@@ -49,7 +49,7 @@
 //     });
 // }
 
-//testi itskeba
+//testi itskeba Slider
 document.addEventListener("DOMContentLoaded", function() {
     let headers = document.querySelectorAll(".slider-header");
     let contents = document.querySelectorAll(".slider-content");
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
     headers.forEach(function(header, index) {
         header.addEventListener("click", function() {
             showContent(index);
-            currentIndex = index; // Update currentIndex to the clicked header
+            currentIndex = index; 
         });
     });
 
@@ -98,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function() {
         showContent(currentIndex);
     }
 
-    // Add click event to dots
     dots.forEach(function(dot) {
         dot.addEventListener("click", function() {
             let index = parseInt(dot.getAttribute("data-index"));
@@ -107,10 +106,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Start the automatic slide
     let slideInterval = setInterval(autoSlide, intervalTime);
 
-    // Show the first content by default
     showContent(currentIndex);
 });
 //testi mtavrdeba
@@ -129,6 +126,11 @@ let rulesBtn = document.querySelector(".rules-btn");
 rulesBtn.addEventListener("click", () => {
     readRules.classList.toggle("readRulesAppear");
 });
+let rulesBtnX = document.querySelector(".rules-x-btn");
+rulesBtnX.addEventListener("click", () => {
+    readRules.classList.toggle("readRulesAppear");
+
+})
 
 // accordion
 
@@ -189,3 +191,6 @@ window.addEventListener('scroll', function() {
       header.style.backgroundColor = '#1a1e1f';
     }
   });
+
+
+
