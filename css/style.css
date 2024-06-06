@@ -4,31 +4,30 @@ header {
   top: 0;
   height: 90px;
   width: 100%;
-  padding-inline: 80px;
+  padding-inline: 146px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 38%;
   background-color: #1a1e1f;
 }
 
 .left-wing-header {
   display: flex;
   align-items: center;
-  column-gap: 5px;
   color: #f4f4f4;
 }
 
 .tbc-logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 68px;
   background: url(../photos/tbc_logo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.right-wing-header > ul {
+.right-wing-header > NAV > ul {
   display: flex;
-  column-gap: 22px;
+  column-gap: 35px;
 }
 
 /* აქ არის პრობლემა ა ცალკე თუ არ დავწერე არ ათეთრებს და ლურჯს ტოვებს */
@@ -47,7 +46,7 @@ a:hover {
 .main-background-img {
   margin-top: 90px;
   width: 100%;
-  height: 452px;
+  height: 342px;
   background-image: url(../photos/background_image.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,8 +61,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding-top: 150px;
-  padding-left: 50px;
+  padding-top: 115px;
+  padding-left: 150px;
 }
 .main-section2 {
   padding-block: 30px;
@@ -211,13 +210,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* padding: 30px 35px 0; */
 }
 .main-section4-1 h6 {
   font-size: 25px;
   margin: 0 0 30px 92px;
 }
+
 /* aq itskeba testi */
 .container {
   width: 90vw;
@@ -239,7 +237,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.accordion {
+.slider {
   margin: 30px 10px;
   border-radius: 5px;
 }
@@ -291,83 +289,142 @@ a:hover {
   background-color: #2b2b2b;
 }
 
-/* test */
+/* test now */
+
+.main-section5 {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section5-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section5-1stline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 57%;
+  font-family: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main-section5-1stline h6 {
+  color: #00a3e0;
+}
+.main-section5-1stline h6:hover {
+  color: #8c8c8c;
+}
+
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #444;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.accordion-icon {
+  font-size: 25px;
+}
+
 .accordion-content {
   display: none;
-  transition: opacity 0.7s ease-in-out;
-  -webkit-transition: opacity 0.7s ease-in-out;
-  -moz-transition: opacity 0.7s ease-in-out;
-  -ms-transition: opacity 0.7s ease-in-out;
-  -o-transition: opacity 0.7s ease-in-out;
+  padding: 15px;
+  background-color: #161616;
+}
+
+.accordion-content p {
+  margin: 0;
+  font-size: 16px;
 }
 
 /* footer */
 
 footer {
-  height: 500px;
   background-color: #1a1e1f;
   color: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 50%;
+  column-gap: 27%;
+  padding-block: 30px;
 }
 .footer-tbc-logo {
-    background: url(../photos/tbc-footer-logo.png);
-    margin-top: 20px;
-    background-repeat: no-repeat;
-  }
-  .footer-left-wing,
-  .footer-right-wing {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-  }
-  .footer-right-wing button{
-    width: 100%;
-    height: 45px;
-    background-color: #00a3e0;
-    color: #f4f4f4;
-    border: none;
-    border-radius: 5px;
-    font-size: 22px;
+  background: url(../photos/tbc-footer-logo.png);
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+.footer-left-wing,
+.footer-right-wing {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.footer-right-wing button {
+  width: 100%;
+  height: 45px;
+  background-color: #00a3e0;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
   cursor: pointer;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-.footer-right-wing button:hover{
-    background-color: #8c8c8c;
-    color: #2b2b2b;
-
+.footer-right-wing button:hover {
+  background-color: #8c8c8c;
+  color: #2b2b2b;
 }
 
-  .footer-left-wing p {
-    margin-left: 9px;
-  }
-  .social-icons{
-    display: flex;
-  }
- 
-  .facebook{
-    background:  url(../photos/facebook.png);
-  }
-  .youtube{
-    background:  url(../photos/youtube.png);
-    margin-bottom: 9px;
-    padding-bottom: 10px;
+.footer-left-wing p {
+  margin-left: 9px;
+}
+.social-icons {
+  display: flex;
+}
 
-  }
-  .footer-icon{
-    width: 90px;
-    height: 90px;
-    background-repeat: no-repeat;
+.facebook {
+  background: url(../photos/facebook.png);
+}
+.youtube {
+  background: url(../photos/youtube.png);
+  margin-bottom: 9px;
+  padding-bottom: 10px;
+}
+.footer-icon {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+}
 
-  }
+/* წესების სექცია */
 
-  /* წესების სექცია */
-  
 .rules:hover {
   opacity: 50%;
   cursor: pointer;
@@ -377,7 +434,7 @@ footer {
 }
 .readRulesAppear {
   display: block;
-  width: 50%;
+  width: 500px;
   height: 100%;
   position: absolute;
   background-color: #2b2b2b;
@@ -427,4 +484,63 @@ footer {
   background-color: #00aeef;
 }
 
+.x-shape {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
 
+.diagonal {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f4f4f4;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  border-radius: 1px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.first {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.second {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.test > h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.test {
+  display: flex;
+  align-items: flex-end;
+}
+.main-x-shape {
+  display: flex;
+  column-gap: 5px;
+  align-items: first baseline;
+  font-weight: 700;
+}
+.x-shape2 {
+  width: 35px;
+  height: 25px;
+}
+/* testi itskeba  */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 25px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.active {
+  background-color: #717171;
+}
+/* testi mtavrdeba  */
